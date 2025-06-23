@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+           <div class="logo"><span>A</span>kash.</div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Akash</span><br />From Maharashtra</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------------------------------------------About-------------------------------------------------------------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/Akash-about2-Photoroom.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About me</h1>
+            <p>
+              My name is Aakash Verulkar, and I’m from Maharashtra. I completed
+              my Bachelor of Engineering in Computer Science in 2024 from SGBAU
+              University. I’m a passionate and dedicated Frontend Developer
+              skilled in HTML, CSS, JavaScript, Bootstrap, React, and Oracle. I
+              also have backend knowledge in Java and JDBC. I always approach my
+              work with full focus and passion, giving 100% effort to ensure
+              quality and perfection in every project I undertake. I'm currently
+              pursuing a Full Stack Java Developer course from NareshIT (since
+              August 2024), and I recently completed a Java Developer internship
+              at Conifyz Technologies, which lasted from 9th March 2025 to 8th
+              April 2025. My goal is to keep growing, learning, and building
+              powerful web applications that create real value.
+            </p>
+
+            <div class="tab-tittle">
+              <p class="tab-link active-link" onclick="opentab('skill')">Skills </p>
+              <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-link" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-content active-tab" id="skill">
+              <ul>
+               <li><span>UI/UX</span><br/>Designing clean and user-friendly web interfaces.</li>
+               <li><span>Frontend Development</span><br/>HTML, CSS, JavaScript, Bootstrap, React.</li>
+               <li><span>Backend Basics</span><br/>Java, JDBC, Oracle Database</li>
+               <li><span>Responsive Design</span><br/>Creating mobile-friendly websites with media queries.</li>
+               <li><span>Version Control & Tools</span><br/> GitHub, VS Code, Eclipse IDE.</li>
+              </ul>
+            </div>
+
+   <div class="tab-content" id="Experience">
+    <ul>  
+     <li>
+      <span>Frontend Projects using HTML, CSS & JavaScript</span><br />
+  • Built multiple mini-projects to strengthen frontend skills and logic-building:  
+  - Currency Converter  
+  - Calculator  
+  - Tic-Tac-Toe Game  
+  - To-Do List App  
+  - Rock-Paper-Scissors Game  
+  • These projects involved DOM manipulation, event handling, and responsive design techniques.
+</li>
+
+      <li>
+      <span>Personal Portfolio Website</span><br />
+      • Created a fully responsive portfolio website using HTML, CSS, and JavaScript.  
+      • Added interactive sections like About, Skills, Projects, and Contact.  
+      • Used media queries and JavaScript tab-switching for better UX.  
+      </li>
+
+     <li>
+      <span>Java Developer Intern</span><br />
+      <b>Conifyz Technologies</b> (9 March 2025 – 8 April 2025)<br />
+      • Worked on backend modules using Java, JDBC, and Oracle database.  
+      • Assisted in building real-world modules and learned debugging and database connectivity.  
+      • Collaborated with team members using Git and followed best coding practices.
+    </li>
+ </ul>
+   </div>
+
+     <div class="tab-content" id="Education">
+     <ul>
+    <li>
+      <span>Full Stack Java Development</span><br />
+      NareshIT Institute (Ongoing since August 2024)<br/>
+      Learning Java, JDBC, Oracle, Spring Boot, React, and frontend development.
+    </li>
+
+    <li>
+      <span>Bachelor of Engineering (Computer Science)</span><br />
+      SGBAU University (Completed in 2024)<br/>Studied Data Structures, OOPs, DBMS, and Web Technologies.
+    </li>
+
+    <li>
+      <span>Diploma in Electrical Engineering</span><br/>Maharashtra State Board (2019 – 2021)<br/>
+      Completed 3-year diploma focused on electrical systems, circuits, and applied engineering fundamentals.
+    </li>
+  </ul>
+
+     </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------------------Services------------------------------------------- ------->
+    <div id="Services">
+      <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="Services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Web Development</h2>
+        <p>
+          I create fast, responsive, and interactive websites using HTML, CSS, JavaScript, Bootstrap, and React. From landing pages to full websites, I can build clean user interfaces with functional logic.
+        </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+        <p>
+          I design user-friendly and mobile-first layouts using Flexbox, Grid, and Bootstrap. I focus on clarity, minimalism, and smooth user experiences for modern websites.
+        </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-database"></i>
+        <h2>Java & DB Integration</h2>
+        <p>
+          I work with Java, JDBC, and Oracle database to build backend connections for websites. I can handle form submissions, database CRUD operations, and backend logic for small projects.
+        </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------------------ortfolio--------------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/calculator3.jpg" alt="Calculator App" />
+        <div class="layer">
+          <h3>JavaScript Calculator</h3>
+          <p>A simple but fully functional calculator app built using HTML, CSS, and JavaScript. Handles all basic math operations.</p>
+          <a href="https://mycalculator-akash.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+          </div>
+
+          <div class="work">
+             <img src="Images/curr3.jpg" alt="Currency Converter App" />
+        <div class="layer">
+          <h3>Currency Converter</h3>
+          <p>A real-time currency converter built using HTML, CSS, and JavaScript. Fetches live exchange rates using API and supports multiple currencies.</p>
+          <a href="https://mycurrencyconvertor-akash.netlify.app/" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </div>
+          </div>
+
+          <div class="work">
+            <img src="Images/tic3.jpg" alt="Tic Tac Toe Game" />
+        <div class="layer">
+          <h3>Tic Tac Toe Game</h3>
+          <p>A 2-player tic tac toe game developed with pure HTML, CSS, and JavaScript. Includes win logic, reset option, and smooth UI transitions.</p>
+          <a href="https://mytic-tac-toe-akash.netlify.app/" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </div>
+          </div>
+        </div>
+        <a class="btn" href="https://github.com/akashverulkar" target="_blank" rel="noopener noreferrer">See More Projects</a>
+      </div>
+    </div>
+
+    <!-------------------------------------------------Contanct--------------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> akashverulkar059@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-flip"></i> 9359238432</p>
+            <div class="social-icon">
+              <a href="https://www.facebook.com/akash.verulkar.1"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://instagram.com/its.akashverulkar?igsh=MTVxcTk1YWdqZm12Zg=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/akash-verulkar-558632218/"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+            <a href="Akash fontend new1 resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your email"required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        
+        <p>
+  © 2025 Akash Verulkar. Crafted with <i class="fa-solid fa-heart" style="color: red;"></i> & 💻 by me.
+</p>
+
+      </div>
+    </div>
+
+    <!-------------------------------------------------Script--------------------------------------------------->
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbykUrUIwP_8SeN5FmAd2dCp8VD8KQ-OxAyqoT-2G91xaqYcCaBbaN9iTg-XwmzjVaPqCA/exec'
+  const form = document.forms['submit-to-google-sheet']
+ const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    msg.innerHTML = "Sending...";
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML =""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  
+  </body>
+
+  <script src="script.js"></script>
+</html>
